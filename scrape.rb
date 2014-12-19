@@ -10,7 +10,7 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
 # list of public profile urls as seed_urls
 
-seed_urls = []
+seed_urls = ["https://www.linkedin.com/in/davidsawatzke","http://in.linkedin.com/in/rajeevreddy"]
 
 data = []
 
@@ -98,5 +98,5 @@ end
 # writing to a json file if not we can directly use the above data array
 
 File.open("data.json","w") do |f|
-  f.write(data.to_json)
+	f.puts JSON.pretty_generate(data)
 end
