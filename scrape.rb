@@ -57,6 +57,15 @@ seed_urls.each do |url|
 
 	temp[:scraped_data] = {}
 
+	# for proxy support in corporate networks
+	
+	# doc = Nokogiri::HTML(open(
+	#   url, 
+	#   :proxy_http_basic_authentication => ["http://proxy.foo.com:8000/", "proxy-user", "proxy-password"],
+	#   # or for no authentication Nokogiri::HTML(open(url, :proxy => 'http://(ip_address):(port)'))
+	#   'User-Agent' => user_agent
+	# ))
+	
 	doc = Nokogiri::HTML(open(url, 'User-Agent' => user_agent))
 
 	temp[:scraped_data][:main_info] = {}
