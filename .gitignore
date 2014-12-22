@@ -1,4 +1,6 @@
 temp.json
 data.json
+*.json
+output/
 Gemfile.lock
 images/
