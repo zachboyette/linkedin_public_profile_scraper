@@ -9,6 +9,9 @@ OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 # the correct way is to add the certificates it can be done easily (google the above error)
 
 
+user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.854.0 Safari/535.2"
+
+
 # list of public profile urls as seed_urls
 seed_urls = ["https://www.linkedin.com/in/davidsawatzke","http://in.linkedin.com/in/rajeevreddy"]
 
@@ -54,7 +57,7 @@ seed_urls.each do |url|
 
 	temp[:scraped_data] = {}
 
-	doc = Nokogiri::HTML(open(url))
+	doc = Nokogiri::HTML(open(url, 'User-Agent' => user_agent))
 
 	temp[:scraped_data][:main_info] = {}
 
