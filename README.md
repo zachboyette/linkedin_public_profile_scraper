@@ -4,6 +4,7 @@ LinkedIn-PublicProfile-Scraper
 > A scraper written in ruby using Nokogiri to get the data available in public profile.
 
 There are two types of uses:
+
 1. User can add various seed urls and the scraped data is stored in a output json file using the scrape.rb file.
 2. In the scraperClass folder a scraper class is available which can be directly used in you project directly (an example.rb file is also provided for usage info)
 
