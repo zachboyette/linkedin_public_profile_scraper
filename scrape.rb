@@ -13,7 +13,7 @@ user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/535.2 (
 
 
 # list of public profile urls as seed_urls
-seed_urls = ["https://www.linkedin.com/in/davidsawatzke","http://in.linkedin.com/in/rajeevreddy"]
+seed_urls = ["https://in.linkedin.com/pub/praveen-kavuri/26/672/50","http://in.linkedin.com/in/rajeevreddy"]
 
 max_num_urls_before_pausing = 10
 
