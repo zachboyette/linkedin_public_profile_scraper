@@ -1,4 +1,4 @@
-LinkedIn-PublicProfile-Scraper
+LinkedIn-PublicProfile-Scraper alternate
 =====================
 
 > A scraper written in ruby using Nokogiri to get the data available in public profile.
